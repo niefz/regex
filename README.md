@@ -46,14 +46,14 @@
 *     }
 *     return array
 * }
-* ③zhe实现
-function unique(arr) {
-    return arr.sort().join(",,").
-    replace(/(,|^)([^,]+)(,,\2)+(,|$)/g, "$1$2$4").
-    replace(/,,+/g, ",").
-    replace(/,$/, "").
-    split(",")
-}
+* ③正则实现
+* function unique(arr) {
+*     return arr.sort().join(",,").
+*     replace(/(,|^)([^,]+)(,,\2)+(,|$)/g, "$1$2$4").
+*     replace(/,,+/g, ",").
+*     replace(/,$/, "").
+*     split(",")
+* }
 
 #### 最短的代码实现一个长度为 m(6) 且值都 n(8) 的数组
 * Array(6).fill(8);
@@ -88,9 +88,3 @@ function unique(arr) {
 * function trim(str) {
 *     return str.replace(/(^\s*)|(\s*$)/g, "")
 * }
-
-####
-
-
-
-
