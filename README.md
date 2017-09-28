@@ -16,6 +16,15 @@
 * b ^= a;
 * a ^= b;
 
+#### 函数节流
+* function throttle(method, context) { 
+*     if (!method.tId) { 
+*         method.call(context); 
+*         method.tId = 1; 
+*         setTimeout(() => method.tId = 0, 100); 
+*     } 
+* } 
+
 #### 不用 Number、parseInt 和 parseFloat 方法把字符串转换成数字
 * var a = 1;
 
